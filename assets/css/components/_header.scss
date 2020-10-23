@@ -1,0 +1,72 @@
+header {
+    background: $bg-color;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+}
+.navbar-brand {
+    font-size: 2.6rem;
+    color: $primary !important;
+    font-weight: bold;
+    img {
+        width: 50px;
+        margin-right: 1rem;
+    }
+    @include responsive(mobile) {
+        font-size: 2rem;
+        img {
+            width: 50px;
+        }
+    }
+}
+
+nav {
+    padding: 0.4rem 0;
+
+    button {
+        border: 1px solid $primary !important;
+        .nav-icon {
+            font-size: 2rem !important;
+            color: $primary;
+            line-height: 3rem !important;
+        }
+    }
+    .nav-menu {
+        justify-content: flex-end;
+        ul {
+            margin-top: 1rem;
+            li {
+                margin-left: 2rem;
+                text-align: center;
+                margin-bottom: 1rem;
+                a {
+                    display: inline-block;
+                    font-size: 1.6rem;
+                    color: $text-color !important;
+                    transition: 0.4s ease;
+                    text-align: center;
+                    padding: 0.6rem 1rem !important;
+                    @include responsive(tablet) {
+                        padding: 0.6rem 0.4rem !important;
+                    }
+                }
+                &:hover a {
+                    border-bottom: 2px solid $primary;
+                }
+            }
+            .nav-item-login {
+                a {
+                    border-radius: 10px;
+                    background: #ffffff;
+                }
+                &:hover a {
+                    border-radius: 0;
+                    background: none;
+                    color: $primary !important;
+                    border-bottom: 2px solid $primary;
+                }
+            }
+        }
+    }
+}

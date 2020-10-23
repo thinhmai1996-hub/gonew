@@ -1,0 +1,95 @@
+.users-share {
+    margin: 8rem 0;
+}
+
+.users-share-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.users-share-carousel {
+    background: #f4faff;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    .avatar-user {
+        display: block;
+        margin: 3rem auto 1rem;
+        border-radius: 50%;
+        width: 80px;
+    }
+    .user-name {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .user-age {
+        font-size: 1.3rem;
+    }
+    .user-content {
+        margin: auto;
+        width: 66%;
+        font-size: 1.6rem;
+        font-weight: bold;
+        @include responsive(mobile) {
+            width: 100%;
+            padding: 0 1rem;
+            text-align: justify;
+        }
+    }
+}
+
+// star
+.rate {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    input {
+        display: none;
+    }
+
+    label {
+        float: right;
+        font-size: 0;
+        color: #fcd000;
+        margin-left: 1rem;
+        cursor: pointer;
+        .star {
+            font-weight: 400;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 2px;
+        }
+    }
+
+    // label:hover,
+    // label:hover ~ label {
+    //     color: #fcd000;
+    //     transition: 0.2s;
+    // }
+
+    // input:checked ~ label {
+    //     color: #f2c94c;
+    // }
+
+    // input:checked ~ label:hover,
+    // input:checked ~ label:hover ~ label {
+    //     color: #fcd000;
+    //     transition: 0.2s;
+    // }
+}
+
+.fa.fa-chevron-left {
+    font-size: 3rem;
+    color: #000000;
+}
+.fa.fa-chevron-right {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    top: 50%;
+}

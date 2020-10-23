@@ -1,0 +1,32 @@
+.social {
+    background: #9cb8d2;
+    padding: 2rem 0;
+    .social-icon {
+        display: inline-block;
+        font-size: 5.4rem;
+        width: 100px;
+        text-align: center;
+        background: #ffffff;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .fb {
+        color: #475a96;
+    }
+    .mess {
+        color: #0084ff;
+    }
+    .youtube {
+        color: #cd201f;
+    }
+    .web {
+        color: #465f87;
+    }
+    .tele {
+        color: #2f80ed;
+    }
+    .share {
+        color: #afcbe5;
+    }
+}

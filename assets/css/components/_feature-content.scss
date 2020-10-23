@@ -1,0 +1,21 @@
+.feature {
+    margin: 8rem 0;
+}
+
+.feature-title {
+    font-size: 5rem;
+    color: $primary;
+}
+.feature-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #465f87;
+}
+.feature-content {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    @include responsive(tablet) {
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+}

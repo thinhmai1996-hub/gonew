@@ -1,0 +1,18 @@
+.gonew-video {
+    margin: 8rem 0;
+    .gonew-video-title {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+    .video-tutorial {
+        border-radius: 10px;
+        height: 600px;
+        @include responsive(tablet) {
+            height: 400px;
+        }
+        @include responsive(mobile) {
+            height: 200px;
+        }
+    }
+}

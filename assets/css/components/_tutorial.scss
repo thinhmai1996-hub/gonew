@@ -1,0 +1,866 @@
+.gonew-million{
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    background: #F4FAFF;
+}
+.gonew-million-title{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: 3rem;
+}
+.gonew-desc{
+    font-size: 1.6rem;
+    color: #000000;
+    .gonew-desc-title{
+        text-align: center;
+        @include responsive(mobile){
+            text-align: justify;
+        }
+    }
+    .gonew-desc-list{
+        
+        li{
+            position: relative;
+            padding-left: 7rem;
+            margin-top: 2rem;
+            @include responsive(mobile){
+                text-align: justify;
+            }
+            &::before{
+                position: absolute;
+                left: 10px;
+                top: 10%;
+                content: url(https://api.iconify.design/ant-design:star-filled.svg?color=%23FFD715&width=40px&height=40px);
+                vertical-align: -0.125em;
+                font-weight: 400;
+                @include responsive(tablet){
+                    left: 5px;
+                    top: 0;
+                    content: url(https://api.iconify.design/ant-design:star-filled.svg?color=%23FFD715&width=25px&height=25px);
+                }
+                @include responsive(mobile){
+                    left: 5px;
+                    top: 32%;
+                    content: url(https://api.iconify.design/ant-design:star-filled.svg?color=%23FFD715&width=25px&height=25px);
+                }
+            }
+            @include responsive(tablet){
+                padding-left: 4rem;
+            }
+            @include responsive(mobile){
+                padding-left: 4rem;
+            }
+        }
+    }
+}
+.img-million{
+    @include responsive(tablet){
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+    
+}
+
+.read-for-coin{
+    margin: 10rem 0;
+    @include responsive(mobile){
+        margin: 5rem 0;
+    }
+    .read-coin-title{
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        @include responsive(tablet){
+            text-align: center;
+        }
+        @include responsive(mobile){
+            text-align: center;
+        }
+    }
+    .read-coin-text{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 1rem;
+        @include responsive(mobile){
+            text-align: justify;
+        }
+    }
+    .read-coin-note{
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding-left: 4rem;
+        margin-bottom: 1rem;
+        color: $primary;
+    }
+    .read-coin-list{
+        color: #000000;
+        font-size: 1.6rem;
+        li{
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 1rem;
+            @include responsive(mobile){
+                text-align: justify;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                background: url(/assets/img/tutorial/coin.svg);
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                top: 5px;
+                left: 0;
+            }
+        }
+    }
+    .img-read-coin{
+        @include responsive(tablet){
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.gonew-attendance{
+    margin: 10rem 0;
+    @include responsive(mobile){
+        margin: 5rem 0;
+    }
+    .attendance{
+        position: relative;
+        &-btn{
+            bottom: 38px;
+            position: absolute;
+            right: 0;
+            @include responsive(tablet){
+                bottom: 26px;
+                right: 170px;
+            }
+            @include responsive(mobile){
+                bottom: 20px;
+            }
+            a{
+                padding: 0.6rem 3rem;
+                @include responsive(tablet){
+                    font-size: 1.6rem;
+                }
+                @include responsive(mobile){
+                    font-size: 1.6rem;
+                    padding: 0.6rem 2rem;
+                }
+            }
+        }
+    }
+    .attendance-title{
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        @include responsive(tablet){
+            text-align: center;
+        }
+        @include responsive(mobile){
+            text-align: center;
+        }
+    }
+    .attendance-text{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 1rem;
+        @include responsive(mobile){
+            text-align: justify;
+        }
+    }
+    .attendance-note{
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding-left: 4rem;
+        margin-bottom: 1rem;
+        color: $primary;
+    }
+    .attendance-list{
+        color: #000000;
+        font-size: 1.6rem;
+        li{
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 1rem;
+            @include responsive(mobile){
+                text-align: justify;
+            }
+            span{
+                color: #F55681;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                background: url(/assets/img/tutorial/coin.svg);
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                top: 5px;
+                left: 0;
+            }
+        }
+    }
+    .img-attendance{
+        @include responsive(tablet){
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.gonews-invite-income{
+    background: #F4FAFF;
+    padding: 3rem 0;
+    .invite-income-title{
+        font-weight: bold;
+        margin-bottom: 3rem;
+        @include responsive(mobile){
+            text-align: center;
+        }
+    }
+    .invite-income-text{
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #000000;
+        margin-bottom: 1rem;
+        @include responsive(mobile){
+            text-align: justify;
+        }
+    }
+    .invite-income-note{
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding-left: 4rem;
+        margin-bottom: 1rem;
+        color: $primary;
+    }
+    .invite-income-list{
+        color: #000000;
+        font-size: 1.6rem;
+        &>li{
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 1rem;
+            @include responsive(mobile){
+                text-align: justify;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                background: url(/assets/img/tutorial/coin.svg);
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                top: 5px;
+                left: 0;
+            }
+        }
+    }
+    .process {
+        list-style: none;
+        position: relative;
+        display: block;
+        margin-top: 2rem;
+        .process_item {
+            text-indent: 0;
+            margin: 0;
+            padding: 0;
+            border: none;
+            width: 100%;
+            display: flex;
+            background: transparent;
+            
+        }
+        
+    }
+    
+    .process_item {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 86px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        cursor: pointer;
+        margin-bottom: 1rem !important;
+    }
+    
+    .list-group-item.active {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+    
+    .process_item.active .process__number {
+        background: #fb1553;
+    }
+    
+    .process_item.active .process__number span {
+        color: #fff;
+    }
+    
+    .process_item.active .process__body-content {
+        max-height: 200px;
+        opacity: 1;
+    }
+    
+    .process_item .process__number {
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    
+    .process_item .process__body-title {
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .process_item .process__body-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #333;
+    }
+    
+    .process_item.active .process__body-title,
+    .process_item:hover .process__body-title {
+        color: #fb1553;
+    }
+    
+    .process__body-content {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+        transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        font-size: 13px;
+    }
+    
+    .process__number {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 px;
+        flex: 0 0 px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        background: #AFCBE5;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .process__number span {
+        font-size: 14px;
+        font-weight: 700;
+        color: #465F87;
+        position: relative;
+    }
+    
+    .process__body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        padding-left: 15px;
+        line-height: 1.7;
+        .process__body-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #465F87;
+        }
+        .process__body-content {
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: #000000;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .process li:not(:nth-child(5)) {
+        padding-bottom: 5px;
+    }
+    
+    .process .process_item:not(:nth-child(5))::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: 15px;
+        top: 0;
+        border-left: 1px dashed #e0e0e0;
+        z-index: -1;
+    }
+}
+.img-invite-income{
+    @include responsive(tablet){
+        width: 50% !important;
+        display: block;
+        margin: auto !important;
+    }
+}
+
+.insert-code{
+    margin: 6rem 0;
+    overflow: hidden;
+    @include responsive(mobile){
+        margin: 2rem 0;
+    }
+    .insert-code{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 4rem;
+    }
+
+    .slider{
+        @include responsive(mobile){
+            margin-right: 8rem;
+        }
+    }
+    
+    
+    .manual-device {
+        position: relative;
+        height: 514px;
+        margin: 10px auto;
+        width: 100%;
+        margin-left: 10rem;
+    }
+    
+    .manual-device-stock {
+        position: absolute;
+        width: 274px;
+        height: 514px;
+        background: url('/assets/img/tutorial/smartphone.png') no-repeat transparent;
+        background-size: cover;
+        z-index: 0;
+        pointer-events: none;
+    }
+    
+    .manual-device-slide {
+        .manual-device-swiper {
+            width: 250px;
+            display: block;
+            margin: 0 auto;
+            padding-top: 10px;
+            padding-left: 0;
+            margin-left: 0.7rem;
+            overflow: hidden;
+            .swiper-slide {
+                border-radius: 10px;
+                overflow: hidden;
+                img {
+                    height: 458px !important;
+                    width: 227px;
+                }
+            }
+        }
+    }
+    
+    .process {
+        list-style: none;
+        position: relative;
+        display: block;
+        .process_item {
+            text-indent: 0;
+            margin: 0;
+            padding: 0;
+            border: none;
+            width: 100%;
+            display: flex;
+            @include responsive(mobile){
+                display: block;
+                &::before{
+                    display: none;
+                }
+            }
+        }
+        @include responsive(mobile){
+            display: flex !important;
+            flex-direction: row !important;
+        }
+        
+    }
+    
+    .process_item {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 86px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        cursor: pointer;
+        margin-bottom: 1rem !important;
+    }
+    
+    .list-group-item.active {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+    
+    .process_item.active .process__number {
+        background: #fb1553;
+    }
+    
+    .process_item.active .process__number span {
+        color: #fff;
+    }
+    
+    .process_item.active .process__body-content {
+        max-height: 150px;
+        opacity: 1;
+    }
+    
+    .process_item .process__number {
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+    
+    .process_item .process__body-title {
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .process_item .process__body-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #333;
+    }
+    
+    .process_item.active .process__body-title,
+    .process_item:hover .process__body-title {
+        color: #fb1553;
+    }
+    
+    .process__body-content {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+        transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        font-size: 13px;
+    }
+    
+    .process__number {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 px;
+        flex: 0 0 px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        background: #e1e1e1;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        @include responsive(mobile){
+            margin: auto;
+        }
+    }
+    
+    .process__number span {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        position: relative;
+    }
+    
+    .process__body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+        padding-left: 15px;
+        line-height: 1.7;
+        .process__body-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        @include responsive(mobile){
+            display: none;
+        }
+        .process__body-content {
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: #000000;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    
+    
+    
+    .img-box-app a {
+        margin-right: 1rem;
+    }
+    
+    .img-box-app a img {
+        width: 26%;
+    }
+    
+    .process li:not(:nth-child(3)) {
+        padding-bottom: 5px;
+    }
+    
+    .process .process_item:not(:nth-child(3))::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: 15px;
+        top: 0;
+        border-left: 1px dashed #e0e0e0;
+        z-index: -1;
+    }
+    
+}
+
+.the-ad{
+    margin: 10rem 0;
+    @include responsive(tablet){
+        margin: 6rem 0;
+    }
+    @include responsive(mobile){
+        margin: 5rem 0;
+    }
+    .the-ad-title{
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        @include responsive(tablet){
+            text-align: center;
+        }
+        @include responsive(mobile){
+            text-align: center;
+        }
+    }
+    .the-ad-text{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000000;
+        margin-bottom: 1rem;
+        @include responsive(mobile){
+            text-align: justify;
+        }
+    }
+    .the-ad-note{
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding-left: 4rem;
+        margin-bottom: 1rem;
+        color: $primary;
+    }
+    .the-ad-list{
+        color: #000000;
+        font-size: 1.6rem;
+        li{
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 1rem;
+            @include responsive(mobile){
+                text-align: justify;
+            }
+            span{
+                color: #F55681;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                background: url(/assets/img/tutorial/coin.svg);
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                top: 5px;
+                left: 0;
+            }
+        }
+    }
+    .img-see{
+        width: 70%;
+        display: block;
+        margin: auto;
+        @include responsive(tablet){
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.share-setting{
+    .row:nth-child(2){
+        margin-top: 8rem;
+        @include responsive(mobile){
+            margin-top: 4rem;
+        }
+    }
+    background: #F4FAFF;
+    padding: 6rem 0;
+    .share-setting-title{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .share-setting-text{
+        font-size: 1.6rem;
+        color: #000000;
+        margin-bottom: 2rem;
+        span{
+            color: #F55681;
+        }
+        @include responsive(mobile){
+            text-align: justify;
+        }
+    }
+    .img-share-setting{
+        width: 50%;
+        display: block;
+        margin: auto;
+        @include responsive(tablet){
+            width: 80%;
+        }
+    }
+}
+
+.withdrawal{
+    margin: 6rem 0;
+    .withdrawal-title{
+        text-align: center;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    }
+    .change{
+        font-size: 1.6rem;
+        font-weight: bold;
+        background: #AFCBE5;
+        border-radius: 14px;
+        padding: 1rem 3rem;
+        margin-bottom: 1rem;
+    }
+    .change-note{
+        color: $primary;
+    }
+    .withdrawal-text{
+        font-size: 1.6rem;
+        color: #000000;
+        margin-top: 3rem;
+    }
+    .scratch-cards{
+        background: #F4FAFF;
+        border-radius: 10px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding:1.6rem  1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        .card-dt{
+            position: relative;
+            padding-left: 4rem;
+            &::before{
+                position: absolute;
+                left: 0;
+                content: url('https://api.iconify.design/bx:bxs-credit-card.svg?color=%23F55681&width=26px&height=26px');
+                vertical-align: -0.125em;
+            }
+        }
+        .img-card{
+            background: url("/assets/img/tutorial/img-card.svg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 26px;
+            width: 120px;        
+        }
+        .viettelpay{
+            position: relative;
+            padding-left: 4rem;
+            &::before{
+                position: absolute;
+                left: 0;
+                content: "";
+                background: url("/assets/img/tutorial/img-vietpay.svg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                height: 26px;
+                width: 26px;
+
+            }
+        }
+        .momo{
+            position: relative;
+            padding-left: 4rem;
+            &::before{
+                position: absolute;
+                left: 0;
+                content: "";
+                background: url("/assets/img/tutorial/img-momo.svg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                height: 26px;
+                width: 26px;
+
+            }
+        }
+        .bank{
+            position: relative;
+            padding-left: 4rem;
+            &::before{
+                position: absolute;
+                left: 0;
+                content: url('https://api.iconify.design/mdi:bank.svg?color=%23465F87&width=26px&height=26px');
+                vertical-align: -0.125em;
+            }
+        }
+    }
+    .img-withdrawal{
+        display: block;
+        width: 76%;
+        margin: auto;
+        @include responsive(tablet){
+            margin-left: 32%;
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.gonew-experience {
+    margin: 8rem 0;
+}
+
+.experience-title {
+    font-weight: bold;
+    text-align: center;
+    width: 56%;
+    margin: 4rem auto;
+    @include responsive(mobile) {
+        width: 100%;
+    }
+}
+
+.card-experience {
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background: #f4faff;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: scaledown 0.4s linear;
+    animation-fill-mode: forwards;
+    &:hover {
+        animation: scale 0.4s linear;
+        animation-fill-mode: forwards;
+        background: #afcbe5;
+    }
+    img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 3rem auto;
+    }
+    .card-body {
+        h4 {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes scaledown {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

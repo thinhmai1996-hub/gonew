@@ -1,0 +1,72 @@
+.update-news {
+    background: $bg-color;
+    padding-top: 6rem;
+    @include responsive(mobile) {
+        padding-bottom: 6rem;
+    }
+    .img-light-carousel {
+        position: absolute;
+        width: 5%;
+        top: -6rem;
+        left: 25%;
+        transform: translateX(-25%);
+        @include responsive(mobile) {
+            width: 7%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.news-carousel {
+    height: 100%;
+    .carousel-indicators {
+        bottom: 14%;
+        li {
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            margin-left: 1rem;
+        }
+        @include responsive(tablet) {
+            bottom: 2%;
+        }
+        @include responsive(mobile) {
+            bottom: -20%;
+        }
+    }
+    .carousel-inner {
+        height: 180px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include responsive(tablet) {
+            height: 280px;
+        }
+        @include responsive(mobile) {
+            height: 240px;
+        }
+        .carousel-item {
+            text-align: center;
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.img-carousel {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-discover {
+    color: #ffffff;
+    font-size: 2.2rem;
+    background: $primary;
+    padding: 0.6rem 6rem;
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
